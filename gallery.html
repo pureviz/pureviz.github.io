@@ -97,18 +97,18 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/infographic"><img src="images/logo.png" style="height: 40px;" alt=""></a>
+        <a class="navbar-brand" href="/"><img src="images/logo.png" style="height: 40px;" alt=""></a>
       </div>
       <div class="collapse navbar-collapse" id="mainmenu">
         <div class="navbar-header navbar-right hidden visible-lg padding-left-50">
           <!-- <a href="#" class="bttn-1">Sign In</a> -->
         </div>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="/infographic/#home-page">Home</a></li>
-          <li><a href="/infographic/#service-page">How it works?</a></li>
-          <li><a href="/infographic/#feature-page">Features</a></li>
-          <li><a href="/infographic/#price-page">Download</a></li>
-          <li><a href="/infographic/docs">Docs</a></li>
+          <li><a href="/#home-page">Home</a></li>
+          <li><a href="/#service-page">How it works?</a></li>
+          <li><a href="/#feature-page">Features</a></li>
+          <li><a href="/#price-page">Download</a></li>
+          <li><a href="/docs">Docs</a></li>
         </ul>
       </div>
     </div>
@@ -159,10 +159,10 @@
                     <div class="widget">
                         <h5 class="widget-title">About</h5>
                         <ul>
-                            <li><a href="/infographic/gallery">Infographic Gallery</a></li>
-                            <li><a href="/infographic/docs">Getting Started</a></li>
-                            <li><a href="/infographic/conditions-license">Terms &amp; Conditions</a></li>
-                            <li><a href="/infographic/privacy-policy">Privacy Policy</a></li>
+                            <li><a href="/gallery">Infographic Gallery</a></li>
+                            <li><a href="/docs">Getting Started</a></li>
+                            <li><a href="/conditions-license">Terms &amp; Conditions</a></li>
+                            <li><a href="/privacy-policy">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
@@ -171,7 +171,7 @@
                         <h5 class="widget-title">Find Us</h5>
                         <ul>
                             <li><a href="https://www.youtube.com/channel/UC_CEEjdNDyJ_tcyWjNJbZfg">PureViz on Youtube</a></li>
-                            <li><a href="/infographic/#contact-page">Contact Us</a></li>
+                            <li><a href="/#contact-page">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -183,7 +183,7 @@
   <script>
 
     var itemsdiv = document.getElementById("galleryitems");
-    self.httpGet('/infographic/galleryitems.json',function(t){
+    self.httpGet('/galleryitems.json',function(t){
             let d = JSON.parse(t);
             if(d.count){
                 for(let c=0;c<Object.keys(d.items).length;c++){
