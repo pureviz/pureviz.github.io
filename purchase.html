@@ -1,0 +1,482 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="PureViz Infographic custom visual allows turning your creative ideas into super-fast Power BI visuals. Start from Power Point and bring your data to life!" />
+  <meta name="keywords"
+    content="PureViz, Pure Viz Infographic, Power BI, Custom Visual, Power Point to Power BI, High Performance">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PureViz Infographic | Purchase Premium Plan</title>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VF47QW5GWZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-VF47QW5GWZ');
+  </script>
+
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/slicknav.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <script src=""></script>
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
+
+<body data-spy="scroll" data-target=".mainmenu-area">
+
+  <div class="preloader">
+    <div class="waves-block">
+      <div class="icon">
+        <i class="fa fa-hourglass-half"></i>
+      </div>
+      <div class="waves wave-1"></div>
+      <div class="waves wave-2"></div>
+      <div class="waves wave-3"></div>
+    </div>
+  </div>
+  <nav class="navbar mainmenu-area" data-spy="affix" data-offset-top="200">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainmenu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="images/logo.png" style="height: 40px;" alt=""></a>
+      </div>
+      <div class="collapse navbar-collapse" id="mainmenu">
+        <div class="navbar-header navbar-right hidden visible-lg padding-left-50">
+          <!-- <a href="#" class="bttn-1">Sign In</a> -->
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/infographic#home-page">Home</a></li>
+          <li><a href="/infographic#service-page">How it works?</a></li>
+          <li><a href="/infographic#feature-page">Features</a></li>
+          <li><a href="/infographic#price-page">Download</a></li>
+          <li><a href="/infographic-docs">Docs</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header-area text-white xs-center v4"
+    style="background-image: url('images/header-bg.png'); background-position: center top; background-size: 100% 100%;min-height: auto;"
+    id="home-page">
+  </header>
+
+  <section id="purchase" class="section-padding contact-area"
+    style="background: url('images/welcome-4-Shape.png') no-repeat scroll center left 10px / 600px 100%;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <div class="page-title">
+            <h4 id="baslik" class="heading-4 title">Purchase PureViz Infographic License</h4>
+          </div>
+          <div class="space-40"></div>
+          <p id="metin"></p>
+        </div>
+      </div>
+      <div class="row" id="params">
+        <div class="col-xs-12">
+          <p>You can enjoy all features of the visual <b>for free as developer</b> but some <a href="/infographic#price-page" style="text-decoration: underline;">premium features</a> will be
+            available <b>for viewers</b> in premium plan only.</p>
+            <div class="space-40"></div>
+        </div>
+         <div class="col-xs-12 col-md-4">
+            <div class="input-box">
+              <h4>Licensing Type: <span id="f1"></span></h4>
+              <input type="radio" checked id="iuser" name="type" value="iuser" onchange="update('user')">
+              <label for="iuser">User Based</label><br>
+              <input type="radio" id="icore" name="type" value="icore" onchange="update('core')">
+              <label for="icore">Tenant Based (Unlimited Users)</label><br>
+              
+              <br><br>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="input-box" id="userdiv">
+              <h4>Report Viewer Users:</h4> 
+                <p>
+                <input type="number" min="10" max="5000" value="100" class="slider-color" id="id2" onchange="update()">
+                </p>
+              <br>
+            </div>
+            <div class="input-box" id="corediv" style="display: none;">
+              <h4>Report Viewer Users:</h4>
+              <p><input disabled type="text" value="Unlimited" class="slider-color" id="id3" onchange="update()"></p>
+              <br>
+            </div>
+            <div class="input-box">
+              <h4>Licensing Duration:</h4> 
+                <p>
+                <select value="1" id="yearselect" style="height: 38px;" onchange="update()">
+                  <option value="1">1 Year</option>
+                  <option value="2">2 Years</option>
+                  <option value="3">3 Years</option>
+                  <option value="4">Life-Time</option>
+                </select>
+                </p> 
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="input-box">
+              <h4>Summary:</h4>
+              <h4>Licenses: <b><span id="r1">100 Users</span></b></h4>
+              <h4><span id="r2"></span></h4>
+              <h4>Total Cost: <b><span title="GBP (British Pound)">£ </span><span id="r3">200</span></b></h4>
+            </div>
+            <br>
+            <div class="input-box">
+              <!-- <button id="purc" class="bttn-3 avangate_button" product-code="pureviz-infographic-1year" product-quantity="10">Purchase Now &nbsp;&nbsp;<i class="fa fa-credit-card"></i></button> -->
+              <button class="bttn-3" id="checkout-but"><i class="fa fa-credit-card"></i> Secure Checkout</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div class="input-box">
+              <p id="te"></p>
+            </div>
+          </div>
+        </div>
+        <script>
+          //var slide1 = document.getElementById("id1");
+          const urlParams = new URLSearchParams(window.location.search);
+          const dyear = urlParams.get('year');
+          const dreturn = urlParams.get('return');
+          const session_id = urlParams.get('session_id');
+          const dtype = urlParams.get('type');
+          const dquantity = urlParams.get('quantity');
+          const coupon = urlParams.get('couponcode');
+
+          var licenseq = 100;
+          var type = "user";
+          var year = 1;
+          var inputtype = document.querySelector('input[name="type"]:checked');
+          var corediv = document.querySelector('#corediv');
+          var userdiv = document.querySelector('#userdiv');
+          var userinput = document.getElementById("id2");
+          var coreinput = document.getElementById("id3");
+          var yearinput = document.getElementById("yearselect");
+
+          yearinput.value = dyear?dyear:1;
+          if(dtype=="user"){
+            type = dtype;
+            document.getElementById("iuser").checked=true;
+            userinput.value = dquantity;
+          }
+          if(dtype=="core"){
+            type = dtype;
+            document.getElementById("icore").checked=true;
+            coreinput.value = dquantity;
+          }
+          
+          if(dreturn=="success"){
+            type = dtype;
+            document.getElementById("params").style.display ="none";
+            document.getElementById("baslik").innerHTML="Checking your payment...";
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+                let d = JSON.parse(this.responseText);
+                //document.getElementById("r1").innerHTML= d.responseDescription+"<br>";
+                //document.getElementById("r2").innerHTML= "Registred Email: "+d.email+"<br>";
+                //document.getElementById("r3").innerHTML= "License Key: "+d.licensekey+"<br>";
+                //document.getElementById("r4").innerHTML= "License Expiration: "+d.expiration+"<br>";
+                
+                document.getElementById("baslik").innerHTML= d.responseDescription;
+                document.getElementById("metin").innerHTML="You purchased "+dquantity+" "+dtype+" licenses for "+ (Number(dyear)<4?dyear:"unlimited")+" years succesfully! Please check your email for other details. <br><br>License key:"+
+                ' <input value="'+d.licensekey+'" disabled /><br>'
+                +'<span style="font-size:11px;">Please copy this key and paste it in your visuals (using gear icon on right top corner of edit pane). </span><br><br>'
+                + '<a href="/infographic-docs" class="bttn-3">Docs - Getting Started</a> '
+                + '<a href="/infographic#videosection" class="bttn-3">Video Tutorial</a>';
+
+                +'<br><h4 class="title">Do you have any questions?</h4><p>Would be happy to hear how we can help you out.</p><a href="mailto:contact@pureviz.net"><i class="fa fa-envelope-o"></i><span>contact@pureviz.net</span></a>';          
+                window.history.pushState('purchase-success', 'Thank you for your purchase!', 'purchase?success='+session_id);
+              }
+            };
+            xhttp.open("GET", "/api/purchased?sessionid="+session_id, true);
+            xhttp.send();        
+          }
+
+
+          var r1 = document.getElementById("r1");
+          var r2 = document.getElementById("r2");
+          var r3 = document.getElementById("r3");
+
+          var bu = document.getElementById("purc");
+          var te = document.getElementById("te");
+
+          function update(src="") {
+            if(src!="")type = src;
+            year = 0+yearinput.value;
+            if(type=="user"){
+              if(userinput.value<10){userinput.value=10;}
+              corediv.style.display = "none";
+              userdiv.style.display = "block";
+              r1.innerHTML = userinput.value+" Users x "+(year==1?"1 Year":(year==2?"2 Years":(year==3?"3 Years":"Life Time")));
+              r2.innerHTML = "Unit price: <b>£ "+(year==1?"2":(year==2?"3.6":(year==3?"5.4":"8")))+" / user</b>";
+              r3.innerHTML = userinput.value*(year==1?2:(year==2?3.6:(year==3?5.4:8)));
+              licenseq = userinput.value;
+            } else {
+              corediv.style.display = "none";
+              userdiv.style.display = "none";
+              r1.innerHTML = "1 Tenant x "+(year==1?"1 Year":(year==2?"2 Years":(year==3?"3 Years":"Life Time")));
+              r2.innerHTML = "";
+              r3.innerHTML = (year==1?"600":(year==2?"1000":(year==3?"1200":"1500")));
+              licenseq = 1 ;//coreinput.value;
+            }
+          }
+
+          //http://api.exchangeratesapi.io/v1/latest?access_key=e7fadaec83df05a6fab9101c509f0543&format=1
+
+          update();
+          // bu.onclick = function () {
+          //  let mailto = "mailto:contact@pureviz.net?subject=Purchase Request&body=License Quantity:"+licensereq +"%0D%0ACompany Name: %0D%0AFull Name: %0D%0AYour Message:  ";
+          //  te.innerHTML =
+          //    "Payment system is currently not working, you will redirect to <a style='text-decoration: underline;' href='"+mailto+bu.getAttribute("product-quantity") +"<br>Company Name: <br>Full Name:  <br>: <br>Your Message:  "+"'>sending email</a> now... <br> We will reach out to you when payment system is up. You can start using your visual using temporary key that we will send.";
+          //   setTimeout(function () {
+          //    location.href = mailto;
+          //    // window.open(
+          //    //   "https://paymenturl", '_blank');
+          //   }, 3000)
+          //}
+          // Create an instance of the Stripe object with your publishable API key
+          //var stripe = Stripe("pk_test_51IcAQ0HznfKFPPzXDST6anYVUPk8Sv5rOm9Owgm5UEzKHHoauzGBmBxrD8JJAQdVScVaYKnzCei9jkJV7Ov5djb300N0d2l6hb");
+          var stripe = Stripe("pk_live_51IcAQ0HznfKFPPzXwt1yI0q86ybTIQL30XeDz6alg856E7JMLOFJHp870Uh7diEFru7UzITpeCus5peuvD7zQwm000it08EODK");
+          var checkoutButton = document.getElementById("checkout-but");
+      
+          checkoutButton.addEventListener("click", function () {
+            checkoutButton.innerHTML="<i class='fa fa-credit-card'> </i> Redirecting...";
+            fetch("/api/create-checkout-session", {
+              method: "POST",
+              body: JSON.stringify({quantity:licenseq,year:year,type:type,coupon:coupon})
+            })
+              .then(function (response) {
+                return response.json();
+              })
+              .then(function (session) {
+                return stripe.redirectToCheckout({ sessionId: session.id });
+              })
+              .then(function (result) {
+                // If redirectToCheckout fails due to a browser or network
+                // error, you should display the localized error message to your
+                // customer using error.message.
+                if (result.error) {
+                  alert(result.error.message);
+                }
+              })
+              .catch(function (error) {
+                console.error("Error:", error);
+              });
+          });
+        </script>
+
+      
+    </div>
+  </section>
+
+  <section class="section-padding-top" id="faq-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 text-center">
+                <div class="page-title">
+                    <h4 class="heading-4 title">Frequently asked questions</h4>
+                    <p></p>
+                </div>
+                <div class="space-80"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div class="faq-box">
+                    <h4 class="title">What is the PureViz Infographic?</h4>
+                    <p>PureViz Infographic is a custom visual developed for Power BI and brings new visual possibilities including using PowerPoint for visual design and applying cool animations.
+                    </p>
+                </div>
+                <div class="faq-box">
+                    <h4 class="title">What is the fundamental difference between the free version and paid Premium plan?
+                    </h4>
+                    <p>You can use all formatting and transformation features with the free version except animations and other premium features. You can try all premium features in edit mode without any license, but these features will suppress in view mode if there is no license.</p>
+                </div>
+                <div class="faq-box">
+                    <h4 class="title">How does licensing model works in the paid plan?</h4>
+                    <p>Licenses are sold per viewer user or per tenant (unlimited users) options. After a successful "purchase", you will obtain a license key to activate all features in your visuals. There is no limit on the number of visuals or reports with a single key. There are no actual named user licenses for viewers technically, it is stated by the license agreement.</p>
+                </div>
+                <div class="faq-box">
+                    <h4 class="title">Is there any other enterprise license option for Report Server, Power BI Premium, or embedded?</h4>
+                    <p>If your organization is using Power BI Premium, Embedded, or Report Server, you can choose tenant based licensing option on purchase page. This license brings unlimited viewer rights across your organization's tenant/server. You can visit
+                        <a href="/purchase">the purchase page</a> for details.</p>
+                </div>
+                <div class="faq-box">
+                    <h4 class="title">Is there any trial option?</h4>
+                    <p>All features of the visual are available for free users in edit mode for trial purposes but you will need a paid plan to offer these features to end-users.</p>
+                </div>
+                <div class="faq-box">
+                    <h4 class="title">Is there any discount offer for non-profits, education customers, or MVPs?</h4>
+                    <p>We offer a 50% discount for non-profits, education customers, and 100% discount for MVPs (Microsoft Most Valuable Professionals). Send an email to us to receive your discount code.</p>
+                </div>
+                <div class="faq-box">
+                    <h4 class="title">What is the refund policy for the paid plan?</h4>
+                    <p>We offer a trial mode for you to test paid capabilities for free without any registration. If you want full refund after purchase, you can contact with support within 15 days from the payment.</p>
+                </div>
+                <div class="faq-box">
+                    <h4 class="title">What happens if my license expires?</h4>
+                    <p>All your visuals will continue working except for premium features. These features (e.g., animations) will suppress for end-users after the license expired. You can update the product key in visual to extend your license.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="faq-box">
+                    <h4 class="title">Is there any visual limitation on importing PowerPoint designs to Power BI?</h4>
+                    <p>No, you can export any drawing/design with any formatting including images, shapes, icons, etc. For dynamic data binding and conditional formatting, not all shape objects are supported. E.g., You cannot change the background color of a shape if it is converted to an image due to an effect (shadow, 3d rotate, glow, etc.) applied on PowerPoint but you can still apply other transformation effects such as rotation, move, show/hide to these layers.</p>
+                </div>
+                <div class="faq-box">
+                    <h4 class="title">Is there a limit on the maximum size of the design file (.SVG) that can be used?</h4>
+                    <p>Yes, there is a 2 MB file size limit (fairly allows hundreds of layers in a single visual) to ensure report loading time is not affected much. In the future, we will bring remote file URL support to eliminate this limitation.</p>
+                </div>
+                <div class="faq-box">
+                    <h4 class="title">Are there localized versions of the visual?</h4>
+                    <p>No, visual configuration UX is offered only in English but you can create multi-language visuals using the conditional formatting feature available in our visual.</p>
+                </div>
+                <div class="faq-box">
+                    <h4 class="title">Which browsers are supported?</h4>
+                    <p>All modern browsers are supported for general functionality, but animation features are not supported on legacy browsers, especially on Internet Explorer. We are working to support these features in future releases.</p>
+                </div>
+                <div class="faq-box">
+                    <h4 class="title">Is there email support for paid plan customers?</h4>
+                    <p>Yes, customers with a paid license have access to email support using their registered email. We guarantee to respond to them in 48 hours at maximum.</p>
+                </div>
+                <div class="faq-box">
+                    <h4 class="title">What happens if you find a bug in the visual?</h4>
+                    <p>You can contact us via support email. We will do our best to offer you a workaround solution and release a new version as soon as possible to fix your problem.</p>
+                </div>
+                <div class="qustion-box-2">
+                    <div class="qustion-icon">
+                        <img src="images/q-icon.png" alt="">
+                    </div>
+                    <h4 class="title">Do you have any questions?</h4>
+                    <p>Would be happy to hear how we can help you out.</p>
+                    <a href="mailto:contact@pureviz.net"><i class="fa fa-envelope-o"></i>
+                        <span>contact@pureviz.net</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <section id="contact-page" class="section-padding contact-area"
+    style="background: url('images/welcome-4-Shape.png') no-repeat scroll center left 10px / 600px 100%;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 text-center">
+          <div class="page-title">
+            <h4 class="heading-4 title">Contact Us</h4>
+            <p>Would be happy to hear how we can help you out.</p>
+            <a href="mailto:contact@pureviz.net"><i class="fa fa-envelope-o"></i> <span>contact@pureviz.net</span></a>
+          </div>
+          <div class="space-80"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-area v4" style="background-image: url('images/footer-bg.png');">
+        <div class="container">
+            <div class="row footer-widget-area">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="widget">
+                        <img src="images/dark-logo.png" style="height:30px;" alt="">
+                        <div class="space-10"></div>
+                        <p>Turn creative ideas into<br> super-fast Power BI visuals. <br>Simply.</p>
+                        <div class="copyright">Copyright <a href="https://intellectbi.com/">Intellect BI</a></div>
+                    </div>
+                </div>
+                 <div class="col-xs-12 col-sm-4">
+                    <div class="widget">
+                        <h5 class="widget-title">About</h5>
+                        <ul>
+                            <li><a href="/infographic-gallery">Infographic Gallery</a></li>
+                            <li><a href="/infographic-docs">Getting Started</a></li>
+                            <li><a href="/conditions-license">Terms &amp; Conditions</a></li>
+                            <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="widget">
+                        <h5 class="widget-title">Find Us</h5>
+                        <ul>
+                            <li><a href="https://www.youtube.com/channel/UC_CEEjdNDyJ_tcyWjNJbZfg">PureViz on Youtube</a></li>
+                            <li><a href="/infographic#contact-page">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+  <!-- <script>
+      (function (document, src, libName, config) {
+          var script             = document.createElement('script');
+          script.src             = src;
+          script.async           = true;
+          var firstScriptElement = document.getElementsByTagName('script')[0];
+          script.onload          = function () {
+              for (var namespace in config) {
+                  if (config.hasOwnProperty(namespace)) {
+                      window[libName].setup.setConfig(namespace, config[namespace]);
+                  }
+              }
+              window[libName].register();
+          };
+
+          firstScriptElement.parentNode.insertBefore(script, firstScriptElement);
+      })(document, 'https://secure.avangate.com/checkout/client/twoCoInlineCart.js', 'TwoCoInlineCart',{"app":{"merchant":"250696372357","iframeLoad":"checkout"},"cart":{"host":"https:\/\/secure.2checkout.com","customization":"inline"}});
+  </script> -->
+  <script src="js/email-decode.min.js"></script>
+  <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/ajaxchimp.js"></script>
+  <script src="js/magnific-popup.min.js"></script>
+  <script src="js/contact-form.js"></script>
+  <script src="js/slicknav.min.js"></script>
+  <script src="js/scrollUp.min.js"></script>
+  <script src="js/wow.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
