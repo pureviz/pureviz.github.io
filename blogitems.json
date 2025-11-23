@@ -189,21 +189,11 @@
 			"tags": ["general","info"],
 			"author": "PureViz Admin",
 			"html": "<p>In third tab of conditional formatting pane, you can write free form formulas including <b>nested brackets and arithmetic operators</b>. It is also useful to use this tab for copy/paste operations between layers. </p> <img src='docs/advancedformula.gif'/> <p><b>Example Math:</b><br>${math|[Discounts]/1000|2;,}K<br>Result: $2,135.25K</p><p><b>Example Date:</b><br>{date|[Date Column]|Mmm YYYY}<br>Result: Sep 2020</p><p><b>Example If:</b><br>{if|math|[Sales]|>|math|800|text|ABC|0;|text|XYZ|0;}<br>Result: ABC</p><p><br><b>Advanced Examples</b><br><br><b>Math:</b><br>Syntax: {math | [measure or formula] | decimals;thausandseparator}<br><br>Sample 1: {math | [Discounts] / 1000 | 2;, }<br>Result: 2,135.25<br><br>Sample 2: {math | [Discounts] / [Quantity] +10 | 1 }<br>Result: 125.7<br><br>Sample 3: ${math | [Discounts] / [Quantity] +10 | 1 }M<br>Result: $125.7M<br><br><br><b>Date:</b><br>Syntax: {date| [date measure] | formatstring }<br><br>Sample 1: {date|[Sales Date]|Mmm YYYY}<br>Result: Sep 2022<br><br>Sample 2: {date|[Ship Date]|D M YYYY}<br>Result: 1 9 2022<br><br><br><b>If Statements:</b><br>Syntax: { if | typeofcondition1 | [condition1] | operator | typeofcondition2 | [condition2] | typeofoutput1 | [output1] | [format1] | typeofoutput2 | [output2] | [format2] }<br><br>Basic Sample: If sales measure (which is a number) is greater than 800 then return ABC else return XYZ<br>Formula: {if|math|[Sales]|>|math|800|text|ABC|0|text|XYZ|0}<br>Result: ABC<br><br>Nested Sample: If sales measure (which is a number) is greater than 800 then return ABC else if Sales is greater than 400 then return DEF else return XYZ<br>Formula: {if|math|[Sales]|>|math|800|text|ABC|0;|text|{if|math|[Sales]|>|math|400|text|DEF|0;|text|XYZ|0;}|0;}<br>Result: 125.7<br><br>You can use nested formulas in if formulas using curly brackets. We are sorry (and have to accept) that formula syntax is a bit complicated, we have plans to improve readability of formulas in next releases. (Maybe support for generic DAX functions)<br><br>-----------------------<br><b>Aggregations and Filters:</b><br><br>On top of available functions, we recently added support for categories, which means that you can feed the visual with multiple row datasets. In order to access specific row in dataset or make aggregations we have basic data field manipulation syntax.<br><br>When you feed your visual with a table similar to below, you can read specific cell value using UI or write formulas similar to [Actual?Location=Asia]. This formula will search for the row with Location=Asia and will return first Actual value. Other operators and filters available in this syntax is shared below.<br><br>General Syntax: <br>[FieldName::Aggregation?Filter] <br>Aggregation parameter is optional and default value is “first“.<br><br>Sample Queries:<br>[Actual?Location=Asia] The first actual value from the table filtered with Location equals Asia.<br>[Actual::2?Location=Asia] The second actual value from the table filtered with Location equals Asia.<br>[Actual::last?Location=Asia] The last actual value from the table filtered with Location equals Asia.<br>[Actual::3] The third actual value from the table (sorted with default order of data defined in sort options of the visual).<br>[Actual::avg] Average of actual value from the table.<br>[Actual::sum?Location=Europe] Sum of actuals from the table filtered with Location equals Europe.<br></p>"
-		},
-		{
-			"id": 99,
-			"title": "<i class='fa fa-envelope-o'></i> Contact with Support",
-			"url": "#support",
-			"status": "active",
-			"created": "2020-08-10 12:04:43",
-			"modified": "2020-08-10 12:07:11",
-			"tags": ["general","info"],
-			"author": "PureViz Admin",
-			"html": "<p>If you have any question regarding listed features or issues on PureViz Infographic Custom Visual, you can reach out to customer support directly via <b><a href='mailto:contact@pureviz.net'>contact@pureviz.net</a></b>. </p><p><br> If you think you faced with a bug, please include following information in your email: <br>-A clear description of what the bug is. <br>-Steps to reproduce the behavior.<br>-Sample report (.PBIX) that reproduces the issue.<br>-Screenshots for the issue. (Optional) </p>"
 		}
 		
 	]
 
 }
+
 
 
