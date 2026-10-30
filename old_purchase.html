@@ -257,22 +257,12 @@
             }
           }
 
-          //http://api.exchangeratesapi.io/v1/latest?access_key=e7fadaec83df05a6fab9101c509f0543&format=1
+          //http://api.exchangeratesapi.io/v1/latest?access_key=e7fadae1c5rmat=1
 
           update();
-          // bu.onclick = function () {
-          //  let mailto = "mailto:contact@pureviz.net?subject=Purchase Request&body=License Quantity:"+licensereq +"%0D%0ACompany Name: %0D%0AFull Name: %0D%0AYour Message:  ";
-          //  te.innerHTML =
-          //    "Payment system is currently not working, you will redirect to <a style='text-decoration: underline;' href='"+mailto+bu.getAttribute("product-quantity") +"<br>Company Name: <br>Full Name:  <br>: <br>Your Message:  "+"'>sending email</a> now... <br> We will reach out to you when payment system is up. You can start using your visual using temporary key that we will send.";
-          //   setTimeout(function () {
-          //    location.href = mailto;
-          //    // window.open(
-          //    //   "https://paymenturl", '_blank');
-          //   }, 3000)
-          //}
-          // Create an instance of the Stripe object with your publishable API key
-          //var stripe = Stripe("pk_test_51IcAQ0HznfKFPPzXDST6anYVUPk8Sv5rOm9Owgm5UEzKHHoauzGBmBxrD8JJAQdVScVaYKnzCei9jkJV7Ov5djb300N0d2l6hb");
-          var stripe = Stripe("pk_live_51IcAQ0HznfKFPPzXwt1yI0q86ybTIQL30XeDz6alg856E7JMLOFJHp870Uh7diEFru7UzITpeCus5peuvD7zQwm000it08EODK");
+
+          //var stripe = Stripe("pk_test_51IcAQ0HznfKFPPzXDST6an");
+          var stripe = Stripe("pk_live_51IcAQ0Hz");
           var checkoutButton = document.getElementById("checkout-but");
       
           checkoutButton.addEventListener("click", function () {
