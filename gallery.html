@@ -191,9 +191,7 @@
                   let item = document.getElementById("galleryitems").appendChild(node);
                   item.setAttribute("class", "col-xs-12 col-sm-6 col-md-4");
 
-                  d.items[c].url.replace("/svgs/","/svgspreview/")
-
-                  item.innerHTML='<div class="odiv"><object data="'+d.items[c].url.replace("/svgs/","/svgspreview/")+'" type="image/svg+xml"><img src="'+d.items[c].thumbnail+'" /></object></div><span style="font-size: 13px;">'+d.items[c].title+'</span><a style="float:right;" href="'+d.items[c].url.replace("https://pureviz.net","")+'" download><div class="bt">Download &nbsp;&nbsp;<i class="fa fa-download"></i></div></a>';
+                  item.innerHTML='<div class="odiv"><object data="'+d.items[c].url+'" type="image/svg+xml"><img src="'+d.items[c].thumbnail+'" /></object></div><span style="font-size: 13px;">'+d.items[c].title+'</span><a style="float:right;" href="'+d.items[c].url+'" download><div class="bt">Download &nbsp;&nbsp;<i class="fa fa-download"></i></div></a>';
                   //item.append("div").html(d.items[c].title);
                   //item.append("div").classed("im",true).style("background-image",'url("'+d.items[c].thumbnail+'")'); 
                 }
